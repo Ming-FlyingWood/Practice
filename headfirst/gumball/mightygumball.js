@@ -1,5 +1,4 @@
-﻿/* 文档放服务器上，输入HTML文件URL运行*/
-window.onload = function() {
+﻿window.onload = function() {
 	var url = "http://localhost/headfirst/gumball/sales.json";
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
@@ -10,10 +9,8 @@ window.onload = function() {
 	};
 	request.send(null);
 }
+
 function updateSales(responseText) {
 	var salesDiv = document.getElementById("sales");
-	//salesDiv.innerHTML = responseText;
-	var sales = JSON.parse(responseText);//把JSON串转换为对象
-	
+	salesDiv.innerHTML = responseText;
 }
-	
