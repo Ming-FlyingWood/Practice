@@ -1,0 +1,10 @@
+[{"name":"SACRAMENTO","time":1516288774889,"sales":6,"longitude":"-121.444429","latitude":"+38.377411"},
+  {"name":"ALDERPOINT","time":1516288777419,"sales":8,"longitude":"-123.602161","latitude":"+40.130490"},
+  {"name":"IRVINE","time":1516288782015,"sales":4,"longitude":"-117.732690","latitude":"+33.641579"},
+  {"name":"SPRECKELS","time":1516288787691,"sales":3,"longitude":"-121.655474","latitude":"+36.626059"},
+  {"name":"LOS ANGELES","time":1516288791067,"sales":8,"longitude":"-118.298662","latitude":"+33.786594"},
+  {"name":"PLAYA DEL REY","time":1516288794925,"sales":9,"longitude":"-118.298662","latitude":"+33.786594"},
+  {"name":"LODI","time":1516288801353,"sales":8,"longitude":"-121.253872","latitude":"+37.889849"},
+  {"name":"SAN FRANCISCO","time":1516288808264,"sales":9,"longitude":"-122.410832","latitude":"+37.721680"},
+  {"name":"CLIPPER MILLS","time":1516288814445,"sales":9,"longitude":"-121.220469","latitude":"+39.543835"},
+  {"name":"LYNWOOD","time":1516288821190,"sales":7,"longitude":"-118.202954","latitude":"+33.924538"}]
