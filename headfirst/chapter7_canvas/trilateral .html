@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Trilateral</title>
+  <meta charset="utf-8">
+  <style>
+    canvas { border: 1px solid black; }
+  </style>
+  <script>
+    window.onload = function () {
+    var canvas = document.getElementById("trilateral");
+    var context = canvas.getContext("2d");
+    context.beginPath();
+    context.moveTo(100, 150);
+    context.lineTo(250, 75);
+    context.lineTo(125, 30);
+    context.closePath();
+    context.strokeStyle = "red";
+    context.lineWidth = 5 * 5;
+    context.stroke();
+    context.fillStyle = "lightblue";
+    context.fill();
+    
+    }
+  </script>
+</head>
+<body>
+  <h1>Trilateral</h1>
+  <canvas id="trilateral" width="600" height="200">
+    <!--If the browser does not support canvas, then this message is displayed.-->
+    <p>please upgrade your browser to use TweetShirt!</p>
+  </canvas>
+  <script>
+  </script>
+</body>
+</html>
