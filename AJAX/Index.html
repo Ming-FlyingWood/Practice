@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>test</title>
+  </head>
+  <body>
+    <h1>test</h1>
+    <button id='onclick'>click</button>
+    <p id='demo'></p>
+    <script>
+    //练习编辑JSON以及用XMLHttpRequest获取JSON数据
+    document.getElementById('onclick').onclick = load;
+      function load(){
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+          if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+             var text = JSON.parse(xmlhttp.responseText);
+             var ahref = document.createElement('a');
+             var atext = document.createTextNode(text.Menovo[1].QR[0].project1.name);
+             ahref.appendChild(atext);
+             document.getElementById('demo').appendChild(ahref);
+             ahref.href = text.Menovo[1].QR[0].project1.url;
+             ahref.target = '_blank';
+             //document.getElementById('demo').innerHTML =text.Menovo[1].QR[0].project1.name;
+          }
+        }
+        xmlhttp.open('GET', 'new.json?t='+Math.random(), true);
+        xmlhttp.send();
+      }
+          
+    </script>
+  </body>
+</html>
