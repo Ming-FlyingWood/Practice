@@ -421,7 +421,6 @@ function submitFormWithAjax(whichform, thetarget) {
     var request = getHTTPObject();
     if (!request) return false;
     alert('aaa');
-    setTimeout(function(){displayAjaxLoading(thetarget);sleep(5000)},0);
     var dataParts = [];
     var element;
     for (var i=0; i<whichform.elements.length; i++) {
